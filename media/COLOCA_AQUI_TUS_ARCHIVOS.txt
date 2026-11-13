@@ -1,0 +1,4 @@
+Para activar los reproductores locales agrega tus propios archivos:
+- video-adopcion.mp4
+- audio-refugio.mp3
+Los reproductores están preparados en index.html.

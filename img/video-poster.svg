@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<rect width="800" height="450" fill="#eaf0e7"/><circle cx="400" cy="190" r="95" fill="#f7d8c8"/>
+<g fill="#718c73"><ellipse cx="400" cy="220" rx="42" ry="32"/><ellipse cx="350" cy="150" rx="18" ry="25" transform="rotate(-25 350 150)"/><ellipse cx="385" cy="125" rx="18" ry="25"/><ellipse cx="420" cy="125" rx="18" ry="25"/><ellipse cx="450" cy="150" rx="18" ry="25" transform="rotate(25 450 150)"/></g>
+<text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="34" font-weight="bold" fill="#34443b">Adoptar es dar una segunda oportunidad</text>
+</svg>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Huellitas en Casa: conoce perros y gatos que buscan una familia y descubre cómo adoptar responsablemente.">
+  <title>Huellitas en Casa | Adopta con amor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- =========================================================
+       CABECERA INSTITUCIONAL
+       Estudiante: Victoria Miranda Martínez
+       Grupo: 5A Programación
+       Institución: CBTis 166 Pablo Torres Burgos
+       Proyecto integrador de prácticas HTML5
+       ========================================================= -->
+
+  <!-- PDF 2: CONTENIDO Y TEXTO EN HTML5
+       Se utilizan etiquetas semánticas para organizar el sitio:
+       header, nav, main, section, article, aside y footer. -->
+  <header class="site-header" id="inicio">
+    <div class="brand">
+      <a href="#inicio" class="brand-link" aria-label="Huellitas en Casa, inicio">
+        <img src="img/logo-huellitas.svg" alt="Logotipo de una huella" class="brand-logo">
+        <span>Huellitas <strong>en Casa</strong></span>
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#mascotas">Mascotas</a>
+      <a href="#proceso">Cómo adoptar</a>
+      <a href="#historias">Historias</a>
+      <a href="#lugares">Mapa de adopción</a>
+      <a href="#contacto" class="nav-cta">Quiero adoptar</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PDF 2: encabezados jerárquicos, párrafos, enlaces y texto inline. -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">UNA FAMILIA CAMBIA CUATRO PATITAS</p>
+        <h1>El amor también<br><span>se adopta.</span></h1>
+        <p class="hero-text">Hay una historia esperando comenzar contigo. Conoce a nuestros perros y gatos y encuentra a ese compañero que hará tu hogar más feliz.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#mascotas">Conocer mascotas</a>
+          <a class="button button-light" href="#proceso">Descubrir el proceso</a>
+        </div>
+        <p class="hero-note"><strong>Adoptar es para siempre.</strong> Una decisión llena de cariño y responsabilidad.</p>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85" alt="Perro de compañía mirando a la cámara">
+        <div class="floating-note"><span>♡</span> Un hogar, miles de momentos felices</div>
+      </div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div>
+        <p class="eyebrow">QUIÉNES SOMOS</p>
+        <h2>Pequeñas huellas,<br><span>grandes historias.</span></h2>
+      </div>
+      <div class="intro-copy">
+        <p><strong>Huellitas en Casa</strong> es un refugio ficticio creado para promover la adopción responsable. Aquí cada mascota merece respeto, cuidados y una familia que la quiera durante toda su vida.</p>
+        <p>Conoce a nuestros compañeros, aprende sobre sus necesidades y elige con calma. <em>La mejor adopción es la que se hace con compromiso.</em></p>
+      </div>
+    </section>
+<!-- PDF 1: MAPA INTERACTIVO DE GOOGLE MAPS -->
+<section class="mapa-section" id="lugares">
+
+    <h2>Lugares de adopción en Cuernavaca</h2>
+
+    <p>
+        Encuentra asociaciones y refugios donde puedes
+        preguntar por mascotas en adopción.
+    </p>
+
+    <div class="mapa-contenedor">
+
+        <iframe
+            src="https://www.google.com/maps?q=refugios+de+animales+adopcion+mascotas+Cuernavaca+Morelos&output=embed"
+            title="Mapa de adopción de mascotas en Cuernavaca"
+            width="100%"
+            height="450"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+    <p class="nota-mapa">
+        Consulta los horarios y disponibilidad antes de visitar
+        cada establecimiento.
+    </p>
+
+</section>
+    <!-- PDF 1: CONTENIDO INCRUSTADO EN HTML5
+         Se integran imágenes externas y locales, video, audio, iframe,
+         canvas y galerías/carruseles para cumplir la práctica multimedia. -->
+    <section class="pets-section section-wrap" id="mascotas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CONOCE A TUS FUTUROS AMIGOS</p>
+          <h2>Buscan un <span>hogar</span></h2>
+        </div>
+        <p>Cada uno tiene una personalidad única. Desliza, conoce sus historias y encuentra tu nueva compañía.</p>
+      </div>
+
+      <!-- Carrusel manual con JavaScript: botones de flecha. -->
+      <div class="pet-carousel js-manual-carousel">
+        <button class="carousel-arrow prev" type="button" aria-label="Mascota anterior">‹</button>
+        <div class="pet-track" id="petTrack">
+          <article class="pet-card">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=85" alt="Perro golden de pelaje dorado">
+            <div class="pet-info"><span class="pet-type">PERRO · 2 AÑOS</span><h3>Max</h3><p>Juguetón, sociable y amante de los paseos.</p><a href="#contacto" class="text-link">Quiero conocerlo →</a></div>
+          </article>
+          <article class="pet-card">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=85" alt="Gato atigrado sentado">
+            <div class="pet-info"><span class="pet-type">GATO · 1 AÑO</span><h3>Mila</h3><p>Curiosa, tranquila y fan de las siestas.</p><a href="#contacto" class="text-link">Quiero conocerla →</a></div>
+          </article>
+          <article class="pet-card">
+            <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=700&q=85" alt="Perro pequeño de color claro">
+            <div class="pet-info"><span class="pet-type">PERRO · 3 AÑOS</span><h3>Bruno</h3><p>Leal, cariñoso y compañero de aventuras.</p><a href="#contacto" class="text-link">Quiero conocerlo →</a></div>
+          </article>
+          <article class="pet-card">
+            <img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=700&q=85" alt="Gato blanco y gris">
+            <div class="pet-info"><span class="pet-type">GATO · 8 MESES</span><h3>Nube</h3><p>Tierna, juguetona y muy observadora.</p><a href="#contacto" class="text-link">Quiero conocerla →</a></div>
+          </article>
+        </div>
+        <button class="carousel-arrow next" type="button" aria-label="Siguiente mascota">›</button>
+      </div>
+      <div class="carousel-dots" id="petDots" aria-label="Elegir mascota"></div>
+      <p class="small-note">*Las mascotas y sus datos son ejemplos demostrativos del proyecto escolar.</p>
+    </section>
+
+    <section class="process-section section-wrap" id="proceso">
+      <div class="section-heading">
+        <div><p class="eyebrow">ADOPTAR ES UN ACTO DE AMOR</p><h2>¿Cómo es el <span>proceso?</span></h2></div>
+        <p>Queremos que cada adopción sea segura, consciente y feliz para todos.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><h3>Conoce</h3><p>Revisa los perfiles y piensa qué mascota se adapta a tu hogar y estilo de vida.</p></article>
+        <article class="step-card"><span class="step-number">02</span><h3>Conversa</h3><p>Llena el formulario y platícanos sobre el espacio y tiempo que puedes ofrecer.</p></article>
+        <article class="step-card"><span class="step-number">03</span><h3>Convive</h3><p>Coordina una visita para conocer a la mascota y resolver tus dudas.</p></article>
+        <article class="step-card"><span class="step-number">04</span><h3>Da la bienvenida</h3><p>Prepara tu hogar y asume el compromiso de cuidarla toda su vida.</p></article>
+      </div>
+      <aside class="responsible-note">
+        <div class="note-icon">♡</div>
+        <div><h3>Una adopción responsable</h3><p>Incluye alimento adecuado, atención veterinaria, identificación, paciencia, ejercicio y cariño. Una mascota <mark>no es un regalo ni un juguete</mark>: es parte de la familia.</p></div>
+      </aside>
+    </section>
+
+    <!-- PDF 1: carrusel CSS puro con navegación por controles numéricos. -->
+    <section class="gallery-section section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">MOMENTOS QUE INSPIRAN</p><h2>Un poquito de <span>ternura</span></h2></div>
+        <p>Las pequeñas cosas hacen grandes recuerdos.</p>
+      </div>
+      <div class="css-carousel">
+        <div class="css-slides">
+          <figure class="css-slide" id="slide1"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=85" alt="Dos perros jugando en el pasto"><figcaption>La alegría de tener un compañero</figcaption></figure>
+          <figure class="css-slide" id="slide2"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=85" alt="Gato descansando"><figcaption>Un rincón seguro para descansar</figcaption></figure>
+          <figure class="css-slide" id="slide3"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=85" alt="Perro disfrutando al aire libre"><figcaption>Amistades que llenan de vida</figcaption></figure>
+        </div>
+        <div class="css-carousel-controls"><a href="#slide1">1</a><a href="#slide2">2</a><a href="#slide3">3</a></div>
+      </div>
+    </section>
+
+    <!-- PDF 1: carrusel automático continuo mediante CSS. -->
+    <section class="ticker-section" aria-label="Mensajes de adopción">
+      <div class="ticker-track"><span>ADOPTA, NO COMPRES ♡</span><span>UNA HUELLA PUEDE CAMBIAR TU VIDA ♡</span><span>EL AMOR NO TIENE RAZA ♡</span><span>ADOPTA, NO COMPRES ♡</span><span>UNA HUELLA PUEDE CAMBIAR TU VIDA ♡</span><span>EL AMOR NO TIENE RAZA ♡</span></div>
+    </section>
+
+    <section class="stories-section section-wrap" id="historias">
+      <div class="section-heading">
+        <div><p class="eyebrow">UN NUEVO COMIENZO</p><h2>Historias que <span>dan esperanza</span></h2></div>
+        <p>Una familia puede cambiarlo todo.</p>
+      </div>
+      <div class="story-grid">
+        <article class="story-card">
+          <img src="img/historia-perrito.svg" alt="Ilustración local de un perrito feliz">
+          <div><span class="story-label">HISTORIA DE EJEMPLO</span><h3>De la espera a un hogar</h3><p>Con paciencia, cuidados y cariño, cada mascota puede comenzar una nueva etapa.</p></div>
+        </article>
+        <article class="story-card">
+          <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=85" alt="Gato descansando cómodamente">
+          <div><span class="story-label">UN COMPROMISO</span><h3>Amor todos los días</h3><p>La adopción no termina al llegar a casa: ahí comienza una amistad para toda la vida.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PDF 1: video local, video externo, audio local y reproductor de audio externo.
+         Agrega tus archivos propios a la carpeta media para activar los reproductores locales. -->
+    <section class="media-section section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">MIRA Y ESCUCHA</p><h2>Conoce más sobre <span>adoptar</span></h2></div></div>
+      <div class="media-grid">
+        <article class="media-card">
+          <h3>Un mensaje para ti</h3>
+          <video controls poster="img/video-poster.svg">
+            <source src="media/video-adopcion.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <small>Video local de demostración. Coloca tu archivo en <code>media/video-adopcion.mp4</code>.</small>
+        </article>
+        <article class="media-card">
+          <h3>Una historia en video</h3>
+          <div class="responsive-frame"><iframe src="https://www.youtube-nocookie.com/embed/5dsGWM5XGdg" title="Video informativo sobre mascotas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <small>Video externo insertado con iframe responsivo.</small>
+        </article>
+        <article class="media-card">
+          <h3>Un momento tranquilo</h3>
+          <audio controls><source src="media/audio-refugio.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio>
+          <small>Audio local de demostración. Coloca tu archivo en <code>media/audio-refugio.mp3</code>.</small>
+        </article>
+      
+      </div>
+    </section>
+
+    <!-- PDF 1: iframe de página externa y canvas interactivo. -->
+    <section class="extras-section section-wrap">
+      <div class="extra-card">
+        <div><p class="eyebrow">INFORMACIÓN ÚTIL</p><h2>Aprende a cuidar</h2><p>Consulta recursos de bienestar animal y ten presente que cada mascota tiene necesidades diferentes.</p><a class="text-link" href="https://www.gob.mx/senasica" target="_blank" rel="noopener">Consultar información →</a></div>
+        <div class="responsive-frame external-frame"><iframe src="https://www.gob.mx/" title="Portal informativo externo" loading="lazy"></iframe></div>
+      </div>
+      <div class="canvas-card">
+        <div><p class="eyebrow">JUEGA UN MOMENTO</p><h2>Un cielo lleno de huellitas</h2><p>Presiona el botón para dibujar nuevas huellas en el lienzo.</p><button class="button button-primary" id="pawButton" type="button">Agregar huellitas</button></div>
+        <canvas id="pawCanvas" width="620" height="260" aria-label="Lienzo interactivo con huellas decorativas"></canvas>
+      </div>
+    </section>
+
+    <!-- PDF 3: FORMULARIOS EN HTML5
+         Formulario con label, input, select, textarea, button y validación nativa.
+         La demostración valida los datos en el navegador; no los guarda ni envía. -->
+    <section class="adopt-section section-wrap" id="contacto">
+      <div class="adopt-copy">
+        <p class="eyebrow">EL SIGUIENTE CAPÍTULO PUEDE SER CONTIGO</p>
+        <h2>¿Listo para dar<br><span>un hogar?</span></h2>
+        <p>Cuéntanos un poquito de ti y del compañero que te gustaría conocer. Este formulario es una demostración escolar de solicitud de adopción.</p>
+        <div class="contact-detail"><span>♡</span><p><strong>Adopta con responsabilidad</strong><br>Piensa en el compromiso de muchos años.</p></div>
+        <div class="contact-detail"><span>⌂</span><p><strong>Prepara un espacio seguro</strong><br>Tu nuevo amigo necesita tiempo para adaptarse.</p></div>
+      </div>
+      <form class="adopt-form" id="adoptForm">
+        <h3>Solicitud de adopción</h3>
+        <p class="form-subtitle">Completa los campos para simular tu solicitud.</p>
+        <div class="form-row">
+          <div class="field"><label for="fullName">Nombre completo *</label><input id="fullName" name="fullName" type="text" placeholder="Tu nombre" minlength="3" maxlength="70" required></div>
+          <div class="field"><label for="email">Correo electrónico *</label><input id="email" name="email" type="email" placeholder="nombre@correo.com" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="phone">Teléfono *</label><input id="phone" name="phone" type="tel" placeholder="10 dígitos" pattern="[0-9]{10}" title="Escribe 10 dígitos" required></div>
+          <div class="field"><label for="petChoice">¿A quién quieres conocer? *</label><select id="petChoice" name="petChoice" required><option value="">Selecciona una opción</option><option>Max</option><option>Mila</option><option>Bruno</option><option>Nube</option><option>Quiero orientación</option></select></div>
+        </div>
+        <div class="field"><label for="homeType">¿Cómo es tu hogar? *</label><select id="homeType" name="homeType" required><option value="">Selecciona una opción</option><option>Casa con patio</option><option>Casa sin patio</option><option>Departamento</option></select></div>
+        <div class="field"><label for="password">Clave de seguimiento (demostración) *</label><input id="password" name="password" type="password" minlength="6" maxlength="20" placeholder="Mínimo 6 caracteres" required><small>No uses una contraseña personal real; este campo solo demuestra el tipo password.</small></div>
+        <div class="field"><label for="message">¿Por qué te gustaría adoptar?</label><textarea id="message" name="message" rows="4" maxlength="500" placeholder="Cuéntanos sobre tu familia, tiempo y experiencia con mascotas..."></textarea></div>
+        <label class="check-field"><input type="checkbox" name="commitment" required> Confirmo que entiendo que adoptar implica un compromiso responsable. *</label>
+        <button class="button button-primary submit-button" type="submit">Enviar solicitud de prueba</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <small>* Campos obligatorios. La información no se almacena ni se envía a un servidor.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><img src="img/logo-huellitas.svg" alt=""><span>Huellitas <strong>en Casa</strong></span></div>
+    <p>Una huella en tu hogar, un recuerdo en tu corazón. ♡</p>
+    <div class="footer-links"><a href="#inicio">Inicio</a><a href="#mascotas">Mascotas</a><a href="#contacto">Adopción</a></div>
+    <small>Proyecto escolar demostrativo · <time id="currentDate"></time></small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
